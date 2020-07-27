@@ -32,32 +32,45 @@ singleSpa.registerApplication(
 
 singleSpa.registerApplication(
   'layout',
-  () => import('single-spa-layout-app'),
+  () => import('rh-uxd-layout'),
   showExcept(['/login']),
 );
 
 singleSpa.registerApplication(
-  'home',
-  () => import('single-spa-home-app'),
-  showWhenAnyOf(['/']),
-);
-
-singleSpa.registerApplication(
-  'angular',
-  () => import('single-spa-angular-app'),
-  showWhenPrefix(['/angular']),
-);
-
-singleSpa.registerApplication(
-  'vue',
-  () => import('single-spa-vue-app'),
-  showWhenPrefix(['/vue']),
-);
-
-singleSpa.registerApplication(
   'react',
-  () => import('single-spa-react-app'),
+  () => import('rh-uxd-react-app'),
   showWhenPrefix(['/react']),
 );
+
+// singleSpa.registerApplication(
+//   'home',
+//   () => import('single-spa-home-app'),
+//   showWhenAnyOf(['/']),
+// );
+
+// singleSpa.registerApplication(
+//   'angular',
+//   () => import('single-spa-angular-app'),
+//   showWhenPrefix(['/angular']),
+// );
+
+// singleSpa.registerApplication(
+//   'vue',
+//   () => import('single-spa-vue-app'),
+//   showWhenPrefix(['/vue']),
+// );
+
+
+// singleSpa.registerApplication(
+//   'integration',
+//   () => import('rh-uxd-react-app'),
+//   showWhenPrefix(['/integration']),
+// );
+
+// singleSpa.registerApplication(
+//   'patternfly',
+//   () => import('@patternfly/react-core'),
+//   showWhenPrefix(['/patternfly']),
+// );
 
 singleSpa.start();
