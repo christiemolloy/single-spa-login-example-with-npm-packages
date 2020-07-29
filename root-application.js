@@ -42,6 +42,12 @@ singleSpa.registerApplication(
   showWhenPrefix(['/react']),
 );
 
+singleSpa.registerApplication(
+  'react-two',
+  () => import('rh-uxd-react-app-amq-example'),
+  showWhenPrefix(['/react-two']),
+);
+
 // singleSpa.registerApplication(
 //   'home',
 //   () => import('single-spa-home-app'),
