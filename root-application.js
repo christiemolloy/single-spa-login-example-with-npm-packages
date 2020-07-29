@@ -43,40 +43,9 @@ singleSpa.registerApplication(
 );
 
 singleSpa.registerApplication(
-  'react-two',
+  'reacttwo',
   () => import('rh-uxd-react-app-amq-example'),
-  showWhenPrefix(['/react-two']),
+  showWhenPrefix(['/reacttwo']),
 );
-
-// singleSpa.registerApplication(
-//   'home',
-//   () => import('single-spa-home-app'),
-//   showWhenAnyOf(['/']),
-// );
-
-// singleSpa.registerApplication(
-//   'angular',
-//   () => import('single-spa-angular-app'),
-//   showWhenPrefix(['/angular']),
-// );
-
-// singleSpa.registerApplication(
-//   'vue',
-//   () => import('single-spa-vue-app'),
-//   showWhenPrefix(['/vue']),
-// );
-
-
-// singleSpa.registerApplication(
-//   'integration',
-//   () => import('rh-uxd-react-app'),
-//   showWhenPrefix(['/integration']),
-// );
-
-// singleSpa.registerApplication(
-//   'patternfly',
-//   () => import('@patternfly/react-core'),
-//   showWhenPrefix(['/patternfly']),
-// );
 
 singleSpa.start();
