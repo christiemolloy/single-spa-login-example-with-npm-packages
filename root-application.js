@@ -37,15 +37,15 @@ singleSpa.registerApplication(
 );
 
 singleSpa.registerApplication(
-  'react',
+  'fuse',
   () => import('rh-uxd-react-app'),
-  showWhenPrefix(['/react']),
+  showWhenPrefix(['/fuse']),
 );
 
 singleSpa.registerApplication(
-  'reacttwo',
+  'amq',
   () => import('rh-uxd-react-app-amq-example'),
-  showWhenPrefix(['/reacttwo']),
+  showWhenPrefix(['/amq']),
 );
 
 singleSpa.start();
